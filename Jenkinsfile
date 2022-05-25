@@ -1,9 +1,8 @@
 pipeline{
-    agent  {
-        docker {
-            image 'node:latest'
-            args '-p 3000:3000'
-        }
+    agent any
+
+    tools{
+        nodejs 'NodeJS 14.17.0'
     }
 
     stages {
