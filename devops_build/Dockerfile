@@ -6,4 +6,4 @@ ADD ./nginx.conf /etc/nginx/nginx.conf
 
 RUN rm -rf /usr/share/nginx/html
 
-ADD /dist/ /usr/share/nginx/html
+ADD /build/ /usr/share/nginx/html
